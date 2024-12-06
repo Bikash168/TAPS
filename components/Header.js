@@ -46,7 +46,10 @@ export default function Header() {
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           {/* Logo Section */}
           <div className="flex items-center space-x-3">
-            <img src="/logo.png" alt="TAPS Logo" className="h-16 w-26" />
+            {/* Remove <a> tag and directly use the Link component */}
+            <Link href="/">
+              <img src="/logo.png" alt="TAPS Logo" className="h-16 w-26" />
+            </Link>
           </div>
 
           {/* Desktop Menu */}

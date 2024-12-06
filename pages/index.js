@@ -4,14 +4,24 @@ export default function Home() {
   return (
     <Layout title="Welcome to TAPS">
       {/* Hero Section */}
-      <section className="bg-blue-900 text-white py-20">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold">Welcome to TAPS</h1>
-          <p className="mt-4 text-lg">
-            Your Gateway to Excellence in Education and Careers.
-          </p>
-        </div>
-      </section>
+      <section
+        className="bg-blue-900 text-white bg-cover bg-center min-h-[700px] flex items-center justify-center"
+        style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+      ></section>
+
+      <div className="container mx-auto px-4 text-center bg-blue-900 text-white py-8 mt-8 rounded-md">
+        <h1 className="text-4xl font-bold">Welcome to TAPS</h1>
+        <p className="mt-4 text-lg">
+          Your Gateway to Excellence in Education and Careers.
+        </p>
+      </div>
+
+
+
+
+
+
+
 
       {/* About Us Section */}
       <section className="py-16 bg-gray-100">
@@ -20,7 +30,7 @@ export default function Home() {
             About Us
           </h2>
           <p className="text-gray-700 text-center">
-            TAPS is committed to providing top-notch education, cutting-edge facilities, 
+            TAPS is committed to providing top-notch education, cutting-edge facilities,
             and fostering a culture of innovation. Join us to achieve academic and career excellence.
           </p>
         </div>
@@ -33,7 +43,7 @@ export default function Home() {
             Academics
           </h2>
           <p className="text-gray-700 text-center mb-4">
-            Explore our wide range of programs in various disciplines designed to equip students with 
+            Explore our wide range of programs in various disciplines designed to equip students with
             the skills and knowledge for success.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
@@ -70,7 +80,7 @@ export default function Home() {
           </p>
           <div className="flex justify-center">
             <img
-              src="/placements.jpg"
+              src="/placements.webp"
               alt="Placements"
               className="rounded-lg shadow-md w-full max-w-3xl"
             />
@@ -83,7 +93,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-blue-900 mb-6">Admissions</h2>
           <p className="text-gray-700 mb-6">
-            Join TAPS and embark on a journey of academic excellence and career growth. 
+            Join TAPS and embark on a journey of academic excellence and career growth.
             Applications for the upcoming semester are now open!
           </p>
           <a
